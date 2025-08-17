@@ -1,9 +1,6 @@
 from random import randint
 
 print('-'*6 ,'Jogo da adivinhação','-'*6)
-from random import randint
-
-print('-'*6 ,'Jogo da adivinhação','-'*6)
 
 print('\nObjetivo - Tente advinhar o número que a máquina vai escolher de 1 a 5')
 print('Vidas: ❤ ❤ ❤ ') 
@@ -11,8 +8,6 @@ print('Vidas: ❤ ❤ ❤ ')
 vidas = 3 
 
 numero_aleatorio = randint(1,5)
-
-print(numero_aleatorio)
 
 while vidas > 0:
     num = int(input('Adivinhe o número: '))
@@ -27,16 +22,3 @@ while vidas > 0:
         if vidas == 0:
             print('Fim de Jogo! você perdeu todas as vidas 💔 ')
 
-print('\nObjetivo - Tente advinhar o número que a máquina vai escolher de 1 a 5')
-while True:
-    num = int(input('Adivinhe o número: '))
-
-    numero_aleatorio = randint(1, 5)
-
-    print('O número escolhido foi:',numero_aleatorio)
-    if num == numero_aleatorio:
-        print('Parabéns! Você ganhou 👑')
-        break
-
-    else:
-        print('Que pena! Você perdeu 🚫')
